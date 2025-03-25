@@ -3,10 +3,10 @@ import Navbar from "./Navbar";
 
 const Home = (props) => {
   const { sumit, data } = props;
-  console.log(data);
+  // console.log(data);   
   const [name,setName] =useState(0)
 
-console.log(name);
+// console.log(name);
 
   return (
     <div>
@@ -30,6 +30,7 @@ console.log(name);
               </div>
             );
           })}
+        
         </div>
       </div>
     </div>
