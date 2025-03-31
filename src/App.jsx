@@ -1,45 +1,35 @@
-import React, { useState } from "react";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
-import Parent from "./Pages/Parent";
-import CounterReducer from "./Pages/CounterReducer";
-import FormReducer from "./Pages/FormReducer";
-import Modules from "./Pages/Modules";
-import Cards from "./Pages/Cards";
+import React from "react";
+import TestSumit from "./Pages/TestSumit";
+import Table from "./Pages/Table";
+import Button from "./components/Button";
+
 const App = () => {
-  const name = "sumit";
-  const data = [
-    {
-      column: "Column 1",
-      para1: "Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
-      para2:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",
-    },
-    {
-      column: "Column 2",
-      para1: "Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
-      para2:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",
-    },
-    {
-      column: "Column 3",
-      para1: "Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
-      para2:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",
-    },
-  ];
-const arr = [1,2,3,4,5,6,7,8,9,10]
-const arr1 ={name:""}
-let name1 =""
- const sum = arr.reduce((acc,item,i,arr)=> acc+item,0)
- console.log(sum);
+const element = <>hi sumit</>
+const obj = {name:"nikhil",pincode:"4354"}
+const {name} =obj
+console.log("old",obj);
+const obj1 = {city:"nikhil",address:"4354"}
 
+  let newObj = Object.assign({},obj,obj1)
 
- 
+  // console.log("new",newObj);
+console.log("new",obj);
+  
+
+  
   return (
     <div>
-      <Cards />
+      <Button className=""/>
+      {element}
+      <ul>
+        <li>
+          <ol>
+            <li></li>
+          </ol>
+        </li>
+      </ul>
+      <Table />
+      {/* <Cards  /> */}
     </div>
   );
 };

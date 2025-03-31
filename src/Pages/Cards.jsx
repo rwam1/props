@@ -9,12 +9,13 @@ const Cards = () => {
     { id: 3, title: "title 3", image: image3 },
   ];
 
+
   return (
     <div>
       <div className="container mt-4">
         <div className="row">
           {cards.map((item, i) => {
-            console.log(item);
+            // console.log(item);
             
             return (
               <div className="col-md-4" key={item.id} >
