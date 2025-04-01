@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from './Navbar'
 
-const About = () => {
+const About = (props) => {
+ const {sumit,age} =props
+  
   return (
     <div>
-        About Page
-        <Navbar link1="blog" link2="service"/>
+    {`this name of a student ${sumit} student age ${age}`}
     </div>
   )
 }

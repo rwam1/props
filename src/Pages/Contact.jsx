@@ -1,11 +1,11 @@
 import React from 'react'
 import Navbar from './Navbar'
 
-const Contact = () => {
+const Contact = ({handleText}) => {
   return (
     <div>
         Contact Page
-      <Navbar link1="home" link2="about"/>
+     <button onClick={()=>handleText("hello sumit")}>click me</button>
     </div>
   )
 }
